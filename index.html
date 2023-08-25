@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="https://kit.fontawesome.com/c238e28867.js" crossorigin="anonymous"></script>
+    <title>Taxa Metabóica Basal</title>
+</head>
+<body>
+    <header>
+        <button id="tema" type="submit"><i  class="fa-regular fa-moon fa-flip-horizontal fa-2x"></i></button>
+    </header>
+    
+    <main>
+        <section>
+            
+            <div class="flex-item1">
+                
+                <form method="post" name="formtmb">
+                    <input convert type="number" name="peso" placeholder="Peso:" >
+                    <input convert type="number" name="altura" placeholder="Altura:" >
+                    <input convert type="number" name="idade" placeholder="Idade:" >
+                    
+                    <div class="sexo">
+                        <input checked type="radio" name="sexo" id="sexof"><label for="sexof" >Mulher</label>
+                        <input  type="radio" name="sexo" id="sexom"><label for="sexom" >Homem</label>
+                    </div>
+                    
+                    <select convert id="nivelFisico" name="nivelFisico" required>
+                        <option class="opt" value="1.2">Sedentário (a)</option>
+                        <option class="opt" value="1.375">Atividade leve (1-3 dias por semana)</option>
+                        <option class="opt" value="1.55">Atividade moderada (3-5 dias por semana)</option>
+                        <option class="opt" value="1.725">Atividade intensa (6-7 dias por semana)</option>
+                        <option class="opt" value="1.9">Atividade muito intensa (duas vezes ao dia)</option>
+                    </select>
+                    
+                    <button type="submit" id="calc">CALCULAR</button>
+                </form>
+                
+                
+            </div>
+            
+            <div class="flex-item2" id="resultado">
+                <h1>Calculadora de Taxa Metabólica Basal |<br> Método Harris Benedict</h1>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>O método Harris Benedict é uma das formas de cálculo metabólico e não dispensa uma consulta com um especialista.</p>
+    </footer>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
